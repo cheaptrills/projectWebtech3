@@ -1,8 +1,88 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: monospace, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: #00B7FF;
+.fakeButtons {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: relative;
+  top: 6px;
+  left: 6px;
+  background-color: #ff3b47;
+  display: inline-block;
+}
+
+.fakeMinimize {
+  left: 5px;
+  background-color: #ffc100;
+}
+
+.fakeZoom {
+  left: 5px;
+  background-color: #00d742;
+}
+
+.fakeMenu {
+  width: 100%;
+  box-sizing: border-box;
+  height: 25px;
+  background-color: #bbb;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-auto-rows: minmax(100px, auto);
+}
+.users {
+  grid-column: 1 / 2;
+  grid-row: 1 / 10;
+  background: #2f3136;
+  padding: 5px 0px 0px 5px;
+}
+
+.chat {
+  grid-column: 2 / 4;
+  grid-row: 1 / 10;
+  background: #36393f;
+  padding: 5px 0px 0px 5px;
+}
+
+.your-profile {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.user,
+.chatbot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  background-color: purple;
+  display: inline-block;
+  top: 1px;
+}
+
+.settings {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  top: 1px;
+  right: 1px;
+}
+
+.title {
+  text-decoration: underline;
 }
