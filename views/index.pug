@@ -2,33 +2,35 @@ extends layout
 
 block content
   div.app
-    div.fakeMenu
-      div.fakeButtons.fakeClose
-      div.fakeButtons.fakeMinimize
-      div.fakeButtons.fakeZoom
     div.wrapper
       div.users
-        div.your-profile.avatar-psychoalpacapillar
+        div.your-profile
+          img.avatar-psychoalpacapillar.image(src='/img/profile/psychoalpacapillar.jpg')
           p Pysch0Alp4c4pill4r
           div.fakeButtons.settings
         div.online-users
           p.title Online users
         div.users
-          div.fakeButtons.avatar
+          div.fakeButtons
+            img.avatar.image(src='/img/profile/cheaptrills.png')
           p Cheaptrills
         div.users
-          div.fakeButtons.avatar
+          div.fakeButtons
+            img.avatar.image(src='/img/profile/iamgoodbytes.png')
           p iamgoodbytes
         div.users
-          div.fakeButtons.avatar
+          div.fakeButtons
+            img.avatar.image(src='/img/profile/mrPing.png')
           p Mr. Ping
         div.users
-          div.fakeButtons.avatar
+          div.fakeButtons
+            img.avatar.image(src='/img/profile/wo hop.jpg')
           p Wo Hop
         div.chatbots
           p.title Chatbots
         div.chatbot
-          div.fakeButtons.avatar
+          div.fakeButtons
+            img.avatar.image(src='/img/profile/imd.png')
           p IMDassistant
       div.chat
         p Chat placed here

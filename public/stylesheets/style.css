@@ -12,26 +12,7 @@ body {
   position: relative;
   top: 6px;
   left: 6px;
-  background-color: #ff3b47;
   display: inline-block;
-}
-
-.fakeMinimize {
-  left: 5px;
-  background-color: #ffc100;
-}
-
-.fakeZoom {
-  left: 5px;
-  background-color: #00d742;
-}
-
-.fakeMenu {
-  width: 100%;
-  box-sizing: border-box;
-  height: 25px;
-  background-color: #bbb;
-  margin: 0 auto;
 }
 
 .wrapper {
