@@ -5,6 +5,18 @@ body {
   padding: 0;
 }
 
+/*
+* === LOGIN PAGE ===
+*/
+.formLogin {
+  color: black;
+}
+
+
+/*
+* === CHAT PAGE ===
+*/
+
 .fakeButtons {
   height: 15px;
   width: 15px;
