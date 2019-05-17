@@ -1,16 +1,15 @@
 extends layout
 
 block content
-    .wrapper
-        .formLogin
-        h2 WELCOME
-            .username
-                label Username
-                textarea#(name="Username", cols="30", rows="10")
-            .password
-                label Password
-                textarea#(name="Password", cols="30", rows="10")
-            .btn-login
-                input(type="Login")
-            
-         
+  .container
+        h1 Log In
+        form(method='POST' action='/login')
+          div.form-group
+            label(for='username') Username
+            input.form-control(type='text' id='username' name='username')
+          div.form-group
+            label(for='password') Password
+            input.form-control(type='password' id='password' name='password')
+          button.btn.btn-primary(type='submit') Log in
+          div.link
+            a(href='/register') No account yet? Register here

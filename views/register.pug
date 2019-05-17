@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .main.container
+        h1 Register
+
+        // register form
+        form(method='POST' action='/register')
+          div.form-group
+            label(for='name') Username:
+            input#name.form-control(type='text' name='username')
+          div.form-group
+            label(for='password') Password:
+            input#pw.form-control(type='password' name='password')
+          div.form-group
+            label(for='passwordConfirmation') Confirm Password:
+            input#pw2.form-control(type='password' name='passwordConfirmation')
+          button.btn.btn-primary(type='submit') Register
+          div.link
+            a(href='/login') Already an account? Sign in here
