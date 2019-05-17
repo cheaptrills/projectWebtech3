@@ -8,20 +8,25 @@ body {
 /*
 * === LOGIN PAGE ===
 */
-.container {
-  margin: 2em auto;
-  background: tomato;
-  padding: 15px;
-  height: 500px;
-  text-align: center;
+
+body {
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-form {
-  text-align: center;
-  align-items: center;
+.container {
+  margin: 50px;
+  background: #36393f;
+  padding: 15px;    
+}
+
+h1 {
+  color: white;
 }
 
 .form-group {
+  color: white;
   width: 400px;
 }
 
