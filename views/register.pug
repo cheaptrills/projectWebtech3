@@ -5,14 +5,11 @@ block content
         h1 Register
         form(method='POST' action='/register')
           div.form-group
-            label(for='name') Username
-            input#name.form-control(type='text' name='username')
+            input(type='text' name='username' placeholder='username')
           div.form-group
-            label(for='password') Password
-            input#pw.form-control(type='password' name='password')
+            input(type='password' name='password' placeholder='password')
           div.form-group
-            label(for='passwordConfirmation') Confirm Password
-            input#pw2.form-control(type='password' name='passwordConfirmation')
+            input(type='password' name='passwordConfirmation' placeholder='password confirmation')
           button.btn.btn-primary(type='submit') Register
           div.link
             a(href='/login') Already an account? Sign in here

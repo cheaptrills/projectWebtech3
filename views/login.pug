@@ -5,11 +5,9 @@ block content
         h1 Log In
         form(method='POST' action='/login')
           div.form-group
-            label(for='username') Username
-            input.form-control(type='text' id='username' name='username')
+            input(type='text' id='username' name='username' placeholder="username")
           div.form-group
-            label(for='password') Password
-            input.form-control(type='password' id='password' name='password')
+            input(type='password' id='password' name='password' placeholder="password")
           button.btn.btn-primary(type='submit') Log in
           div.link
             a(href='/register') No account yet? Register here
