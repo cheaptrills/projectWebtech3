@@ -1,51 +1,17 @@
 extends layout
 
 block content
-  div.app
-    div.wrapper
-      div.users
-        div.your-profile
-          img.avatar-psychoalpacapillar.image(src='/img/profile/psychoalpacapillar.jpg')
-          p Pysch0Alp4c4pill4r
-          div.fakeButtons.settings
-        div.online-users
-          p.title Online users
-        div.users
-          div.fakeButtons
-            img.avatar.image(src='/img/profile/cheaptrills.png')
-          p Cheaptrills
-        div.users
-          div.fakeButtons
-            img.avatar.image(src='/img/profile/iamgoodbytes.png')
-          p iamgoodbytes
-        div.users
-          div.fakeButtons
-            img.avatar.image(src='/img/profile/mrPing.png')
-          p Mr. Ping
-        div.users
-          div.fakeButtons
-            img.avatar.image(src='/img/profile/wo hop.jpg')
-          p Wo Hop
-        div.chatbots
-          p.title Chatbots
-        div.chatbot
-          div.fakeButtons
-            img.avatar.image(src='/img/profile/imd.png')
-          p IMDassistant
-      div.chat
-        div.message.incoming-message
-          p.text Cheaptrills: this is a test message
-        div.message.incoming-message
-          p.text Cheaptrills: this is a test message
-        div.message.incoming-message
-          p.text Cheaptrills: this is a test message
-        div.message.incoming-message
-          p.text Cheaptrills: this is a test message
-        div.message.incoming-message
-          p.text Cheaptrills: this is a test message
-        div.message.incoming-message
-          p.text Cheaptrills: this is a test message
-        div.message.incoming-message
-          p.text Cheaptrills: this is a test message
-        div.message.incoming-message
-          p.text Cheaptrills: this is a test message
+    #appContainer.flex-column
+      header
+        .container.flex-column.flex-center
+          h1 IMDchatroom
+          p.light-text In code we unite!
+      #mainContent.container.flex-grow-1.flex-column
+        // Message page
+        section#chat.flex-grow-1.flex-column
+          #messagesList.flex-grow-1
+          form#messageForm.flex
+            input#messageInput.flex-grow-1(type='text', name='message ')
+            button#sendBtn Send
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js')
+    script(src='app.js ')

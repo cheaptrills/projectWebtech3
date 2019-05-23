@@ -75,6 +75,7 @@ input {
   display: grid;
   grid-template-columns: 15% 85%;
   grid-auto-rows: minmax(100px, auto);
+  background-color: #2f3136;
 }
 .users {
   grid-column: 1 / 2;

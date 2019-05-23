@@ -1,15 +1,16 @@
 extends layout-form
 
 block content
-    .container
-        h1 Register
-        form(method='POST' action='/register')
-          div.form-group
-            input(type='text' name='username' placeholder='username')
-          div.form-group
-            input(type='password' name='password' placeholder='password')
-          div.form-group
-            input(type='password' name='passwordConfirmation' placeholder='password confirmation')
-          button.btn.btn-primary(type='submit') Register
-          div.link
-            a(href='/login') Already an account? Sign in here
+  .container
+      h1 SIGN UP
+      form(action='', method='POST')
+        .form-group
+          input#username(type='text', name='username', placeholder='username')
+        .form-group
+          input#password(type='password', name='password', placeholder='password')
+        .form-group
+          input#passwordconfirmation(type='password', name='passwordConfirmation', placeholder='password confirmation')
+        a(href='/')
+          button.btn.btn-primary(type='submit') Sign up
+      .link
+        a(href='/login') Already an account? Sign in here
