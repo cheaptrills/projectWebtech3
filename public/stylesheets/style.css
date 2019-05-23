@@ -3,6 +3,9 @@ body {
   color: white;
   margin: 0;
   padding: 0;
+}
+
+.main {
   background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +28,10 @@ h1 {
   padding-bottom: 15px;
 }
 
-.form-control {
+input {
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
   width: 400px;
 }
 
