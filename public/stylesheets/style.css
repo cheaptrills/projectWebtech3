@@ -127,3 +127,18 @@ input {
 .title {
   text-decoration: underline;
 }
+
+.message {
+  width: 40%;
+  height: 40px;
+  margin: 10px;
+  background: #2f3136;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.message .text {
+  margin-left: 5px;
+  padding-top: 5px;
+}
