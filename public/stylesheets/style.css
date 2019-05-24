@@ -3,6 +3,9 @@ body {
   color: white;
   margin: 0;
   padding: 0;
+}
+
+.main {
   background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,7 +29,9 @@ h1 {
 }
 
 input {
-  border-radius: 3px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
   width: 400px;
   text-align:center;
 }
@@ -71,6 +76,7 @@ input {
   display: grid;
   grid-template-columns: 15% 85%;
   grid-auto-rows: minmax(100px, auto);
+  background-color: #2f3136;
 }
 .users {
   grid-column: 1 / 2;
@@ -126,4 +132,19 @@ input {
 
 .title {
   text-decoration: underline;
+}
+
+.message {
+  width: 40%;
+  height: 40px;
+  margin: 10px;
+  background: #2f3136;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.message .text {
+  margin-left: 5px;
+  padding-top: 5px;
 }
